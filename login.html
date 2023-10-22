@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+
+        <input class="pass" type="text" id="userName" placeholder="User name">
+        <div class="useNameDiv" id="useNameDiv"></div>
+
+        <input class="email" id="email" type="email" placeholder="email">
+        <div class="validEmail" id="validEmail"></div>
+
+        <input class="pass" type="password" id="password" placeholder="Enter password" onInput="check()" />
+        <input class="pass" type="password" id="Cpassword" placeholder="Confirm password" />
+        <div class="Password2" id="Passworld2"></div>
+
+        <br>
+        <div id="set">
+            <div id="count"></div>
+
+            <div class="checkPoints"></div>
+            <div id="check0">
+                <span>Length more than 8.</span>
+            </div>
+
+            <div id="check2">
+                <span>Contains numerical character.</span>
+            </div>
+
+            <div id="check3">
+                <span>Contains Upper case.</span>
+            </div>
+
+            <div id="check4">
+                <span>Contain Lower case.</span>
+            </div>
+
+            <div id="check5">
+                <span>Contain Symbols (!,%,&,@,#,$,^,*,?,_,~).</span>
+            </div>
+        </div>
+        <div class="approved" id="approved"></div>
+        <button class="Button" onclick="onClick()">Enter</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
